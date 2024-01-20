@@ -1,0 +1,447 @@
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+    .hero-content p {
+        font-size: 1rem; /* Smaller font size for text */
+    }
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Stack menu items vertically with spacing */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('C:\Users\brown\Desktop\Toby business\website\images\dji.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optional: Add a color in case the image fails to load */
+    background-color: #815858;
+}
+
+header {
+    background-color: #815858d4; /* Updated background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly heavier shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.95; /* Slight transparency for blending with hero section */
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: #ffc83c;
+    font-size: 260%;
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffc83c;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #f5ff42; /* Updated text color */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+/*    text-decoration: underline;*/
+}
+
+a {
+    font-size: 1.5rem;
+    color: #f5ff42;
+    text-decoration: none; /* Remove underline by default 
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Change text color on hover */
+}
+
+
+
+/* Hero section styles remain the same as your previous version */
+
+.hero {
+    background-image: url('images/dji.jpg');/*    background-size: cover;*/
+    background-position: center;
+    background-size: cover;
+    height: 80vh; /* You can adjust this to suit your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Larger font size */
+    color: #ffcc00; /* Bright, attention-grabbing color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem; /* Slightly larger paragraph font */
+    color: #ffffff; /* Keeping it white for simplicity */
+    max-width: 600px; /* Max width for better readability */
+    margin: 0 auto 30px; /* Auto margins for centering */
+    line-height: 1.4; /* Improved line height for readability */
+}
+
+.btn-explore {
+    background-color: #00b31b9e; /* Updated background color */
+    color: #fbff00; /* Updated text color */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Making the button text bold */
+    text-transform: uppercase; /* Uppercase text for the button */
+}
+
+.btn-explore:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* ----------end hero----------------------------------------------------------------------------------------------------------- */
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox-trigger img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.lightbox-trigger img:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/*------------end lightbox------------------------------------------------------- */
+
+.featured-crafts {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.featured-crafts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.crafts-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Spacing between grid items */
+    padding: 0 30px; /* Padding around the grid */
+    justify-content: center;
+}
+
+.craft-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #6b6b6b; /* Updated background color */
+    padding: 25px;
+    border-radius: 10%;
+}
+
+.craft-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow for depth */
+}
+
+.craft-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.craft-item h3 {
+    font-size: 1.5rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.craft-item p {
+    font-size: 1rem;
+    color: #ffc83c; /* Updated text color */
+}
+
+.craft-image {
+    width: 100%; /* Set the width to fit the container */
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Hide parts of the image that overflow */
+}
+
+.craft-image img {
+    width: 100%; /* Ensure the image fills the width */
+    height: 100%; /* Ensure the image fills the height */
+    object-fit: cover; /* Resize the image to maintain aspect ratio while filling the element */
+    border-radius: 30px;
+}
+
+/*-------------end crafts--------------------------------------------------------------------------------------------- */
+
+.blog-preview {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.blog-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: #6b6b6b; /* Updated background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.blog-post.expanded {
+    max-height: none; /* Remove max-height when expanded */
+}
+
+.blog-post:nth-child(odd) img {
+    order: 1; /* Image on the right for odd posts */
+}
+
+.blog-post:nth-child(even) img {
+    order: -1; /* Image on the left for even posts */
+}
+
+.blog-post img {
+    width: 16%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.blog-content h3 {
+    font-size: 1.8rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.blog-content p {
+    font-size: 1.2rem; /* Slightly larger paragraph font */
+    color: #ffc83c; /* Updated text color */
+}
+
+.read-more {
+    text-decoration: none;
+    color: #f5ff42; /* Updated text color */
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/*---------------end blog--------------------------------------------------------------------------------------------------------- */
+
+.affiliate-products {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.affiliate-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.affiliate-product-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+    transform: scale(1.03); /* Slight increase in size */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.product-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #6b6b6b; /* Updated background color */
+    padding: 15px;
+    text-align: left;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #ffc83c; /* Updated text color */
+}
+
+.buy-button {
+    text-decoration: none;
+    color: #fbff00; /* Updated text color */
+    background-color: #00b31b9e; /* Updated background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*-------------------firstcraftpage---------------*/
+
+/*-------------------------------------------------------------------------------*/
+
+.craft-detail {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.craft-detail-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+    border-radius: 30px;
+}
+
+.craft-detail h1, h2 {
+    color: #ffc83c; /* Color consistent with main page */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow as per main page */
+}
+
+.craft-detail ul {
+    list-style-type: disc; /* Bullets for features list */
+    margin-left: 20px; /* Indent for the list */
+}
+
+.craft-detail p {
+    color: #333; /* Darker text for readability */
+    line-height: 1.6; /* Line spacing for better readability */
+}
+
+.craft-detail a {
+    color: #007bff;
+    text-decoration: none; /* Style for links */
+}
+.craft-detail a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+footer {
+    /* Match footer styles to main page */
+    background-color: #815858; /* Same as main page footer */
+    color: #ffcc00; /* Footer text color */
+    /* ... other footer styles ... */
+    text-align: center;
+    margin-bottom: 60px;
+}
