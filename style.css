@@ -22,11 +22,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('\dji.jpg');
+/*     background-image: url('\dji.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     /* Optional: Add a color in case the image fails to load */
     background-color: #815858;
 }
@@ -99,7 +99,7 @@ a:hover {
 /* Hero section styles remain the same as your previous version */
 
 .hero {
-    background-image: url('images/dji.jpg');/*    background-size: cover;*/
+    background-image: url('/dji.jpg');/*    background-size: cover;*/
     background-position: center;
     background-size: cover;
     height: 80vh; /* You can adjust this to suit your design */
