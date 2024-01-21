@@ -445,3 +445,59 @@ footer {
     text-align: center;
     margin-bottom: 60px;
 }
+
+/*-------------------------------------------------------------------------------*/
+
+/*-------------------contactpage---------------*/
+
+/*-------------------------------------------------------------------------------*/
+
+.contact-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #815858; /* Theme color for labels */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #815858; /* Theme color border */
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.btn-submit {
+    background-color: #00b31b9e; 
+    color: #fbff00;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
