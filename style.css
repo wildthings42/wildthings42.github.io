@@ -466,7 +466,7 @@ footer {
 .contact-form label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #815858; /* Theme color for labels */
+    color: #ffc83c; /* Theme color for labels */
 }
 
 .contact-form input[type="text"],
