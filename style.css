@@ -546,7 +546,7 @@ footer {
 .course-info p {
     line-height: 1.6; /* Improve readability */
     margin-bottom: 20px; /* Space below the paragraph */
-    color: #eee
+    color: #eee;
 }
 
 .btn-primary {
