@@ -513,12 +513,14 @@ footer {
     color: #333; /* Dark text for readability */
     margin-top: 100px;
     margin-bottom: 100px;
+    background-color: #6b6b6b;
 }
 
 .digital-course-section .container {
     max-width: 1200px; /* Restrict container width for content alignment */
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Padding on sides */
+    
 }
 
 .course-overview {
