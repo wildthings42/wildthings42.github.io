@@ -510,7 +510,7 @@ footer {
 .digital-course-section {
     background-color: #6b6b6b; /* Light background for contrast */
     padding: 40px 0; /* Top and bottom padding */
-    color: #333; /* Dark text for readability */
+    color: #eee; /* Dark text for readability */
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -546,7 +546,6 @@ footer {
 .course-info p {
     line-height: 1.6; /* Improve readability */
     margin-bottom: 20px; /* Space below the paragraph */
-    color: #eee;
 }
 
 .btn-primary {
