@@ -1,22 +1,3 @@
-@media (max-width: 768px) {
-    .hero {
-        height: 60vh; /* Adjust height for smaller screens */
-    }
-    .hero-content h1 {
-        font-size: 2rem; /* Smaller font size for headings */
-    }
-    .hero-content p {
-        font-size: 1rem; /* Smaller font size for text */
-    }
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0; /* Stack menu items vertically with spacing */
-    }
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -567,4 +548,28 @@ footer {
 
   .gallery-section h3, .gallery-item-details h3 {
     color: #ffc83c;
+}
+
+.gallery-section img {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+    .hero-content p {
+        font-size: 1rem; /* Smaller font size for text */
+    }
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Stack menu items vertically with spacing */
+    }
 }
