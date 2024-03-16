@@ -546,6 +546,13 @@ footer {
   ------------------------Gallery section ----------- ----------------------------------- ----------------------------------- -----------------------------------
   - ---------------------------------------------- ----*/
 
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content within each item */
+}
+
   .gallery-section h3, .gallery-item-details h3 {
     color: #ffc83c;
 }
@@ -553,6 +560,16 @@ footer {
 .gallery-section img {
     border-radius: 10px;
 }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centers items within the grid */
+    padding: 20px;
+}
+
+
 
 @media (max-width: 768px) {
     .hero {
@@ -563,4 +580,13 @@ footer {
     }
     .hero-content p {
         font-size: 1rem; /* Smaller font size for text */
+        width:  100%;
+    }
+ 
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Each item takes full width on smaller screens */
+    }
 }
+
+
