@@ -563,13 +563,4 @@ footer {
     }
     .hero-content p {
         font-size: 1rem; /* Smaller font size for text */
-    }
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0; /* Stack menu items vertically with spacing */
-    }
 }
