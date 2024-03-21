@@ -12,6 +12,10 @@ body {
     background-color: #815858;
 }
 
+body p {
+    color: #dadada;
+}
+
 header {
     background-color: #815858d4; /* Updated background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly heavier shadow for depth */
@@ -397,7 +401,8 @@ a:hover {
 
 .craft-detail h1, h2 {
     color: #ffc83c; /* Color consistent with main page */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow as per main page */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .craft-detail ul {
@@ -435,14 +440,20 @@ footer {
 /*-------------------------------------------------------------------------------*/
 
 .contact-section {
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
-    padding: 20px;
+    padding: 45px;
     text-align: center;
 }
 
+.contact-section h1, h2, h3 {
+    color: #ffc83c;
+}
+
+
 .contact-form {
     margin-top: 30px;
+    width: 100%;
 }
 
 .contact-form label {
@@ -504,6 +515,18 @@ footer {
     
 }
 
+.digital-course-section h2 {
+    text-align: center;
+    cursor: pointer; /* Indicates the element is clickable */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.digital-course-section h2:hover {
+    color: #f5ff42; /* Change to your theme's highlight color */
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+
 .course-overview {
     display: flex; /* Flexbox layout for side-by-side content */
     align-items: center; /* Align items vertically */
@@ -532,7 +555,7 @@ footer {
 
 .btn-primary {
     background-color: #00b31b9e; /* Primary button color */
-    color: white; /* Text color for readability */
+    color: #fbff00; /* Text color for readability */
     text-decoration: none; /* Remove underline from links */
     padding: 10px 20px; /* Padding for size */
     border-radius: 5px; /* Rounded corners */
@@ -619,5 +642,24 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+
+    .contact-form {
+    margin-top: 30px;
+    width: 95%;
+    }
+
+    .course-overview {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-image, .course-info {
+        width: 100%;
+        text-align: center;
+    }
+    .course-info {
+        display: none; /* Initially hide the details */
+    }
+}
 
 
