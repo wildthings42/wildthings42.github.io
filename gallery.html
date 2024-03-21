@@ -1,134 +1,610 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Wild Things</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="background-color: #6b6b6b;">
-    <header>
-        <div class="brand-name">
-            <a href="index.html">Wild Things</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="craft1.html">DIYs</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-<main>
-    <section class="gallery-section">
-        <h1 style="background-color: #815858; color: #ffc83c; padding: 100px; font-size: 55px;">Project Gallery</h1>
-        <div class="gallery-grid">
-            <!-- Example gallery item with dropdown for details -->
-            <div id="drinkcarriers" class="gallery-item">
-                <div class="gallery-link" style="cursor: pointer;">
-                    <img src="emptycarriers2.png" alt="Customizable Drink Carriers">
-                    <h3>Customizable Drink Carriers</h3>
-                </div>
-                <div class="gallery-item-details" style="display:none;">
-                    <h2>Customizable Drink Carriers</h2>
-                    <p>Our drink carriers bring versatility and style to your gatherings, made from high-quality wood and available in 24 stunning colors. Perfect for beer cans, wine bottles, and more. Crafted with precision, these carriers are designed to support a variety of beverages, ensuring your drinks are always within reach.</p>
-                    
-                    <h3>Features and Benefits</h3>
-                    <ul>
-                        <li>Variety of wood types and 24 stain colors for true customization, making your drink carrier uniquely yours.</li>
-                        <li>Interchangeable inserts designed to snugly fit beer cans, wine bottles, liquor bottles, and accessories for flexibility and convenience.</li>
-                        <li>Durable construction guarantees your drink carrier withstands the test of time, maintaining both functionality and style.</li>
-                    </ul>
-                    <img src="winecarrier2.png" alt="Customizable Wine Carrier Insert">
-                    
-                    <h3>Use Cases</h3>
-                    <p>From tailgate parties to picnics, or as a thoughtful gift, our customizable drink carriers are versatile enough for any occasion. Easily switch inserts depending on the event and never worry about handling drinks again.</p>
-                    
-                    <h3>Care Instructions</h3>
-                    <p>Keep your drink carrier in pristine condition with simple care. A quick wipe with a damp cloth is all it takes to maintain its beauty, avoiding prolonged exposure to moisture to preserve the wood's integrity.</p>
-                    <img src="beercarriers7.png" alt="Customizable Beer Carrier Insert">
-                    
-                    <h3>Customer Testimonials</h3>
-                    <blockquote>"The customizable drink carrier was a hit at my husband's birthday BBQ. Its fantastic quality and the ability to choose from 24 colors made it incredibly special!" - Jane Doe</blockquote>
-                </div>
-            </div>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+/*     background-image: url('\dji.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* Optional: Add a color in case the image fails to load */
+    background-color: #815858;
+}
 
-            <div id="flighttrays" class="gallery-item">
-                <div class="gallery-link" style="cursor: pointer;">
-                    <img src="tasters10(2).png" alt="Custom Flight Trays">
-                    <h3>Custom Flight Trays</h3>
-                </div>
-                <div class="gallery-item-details" style="display:none;">
-                    <h2>Custom Flight Trays</h2>
-                    <p>Experience the art of tasting with our custom flight trays, a staple for bars and breweries. Crafted with precision from high-quality wood, these flight trays are designed to hold a variety of "taster" glasses, allowing customers to sample small amounts of multiple drinks in style. Proudly serving establishments like Leftcoast Brewing and Gamecraft Brewing in Southern California, our trays are a testament to quality and craftsmanship.</p>
-                    
-                    <h3>Features and Benefits</h3>
-                    <ul>
-                        <li>Perfectly sized holes or sockets to fit standard taster glasses, ensuring a snug and secure fit for a variety of beverages.</li>
-                        <li>Customizable options available, including wood type and finish, to match the aesthetic of any bar or brewery.</li>
-                        <li>Robust construction guarantees long-lasting use, even in high-traffic commercial settings.</li>
-                    </ul>
-                    <img src="tasters1.png" alt="Custom Flight Tray Variety">
+header {
+    background-color: #815858d4; /* Updated background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly heavier shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.95; /* Slight transparency for blending with hero section */
+}
 
-                    <h3>Use Cases</h3>
-                    <p>Our flight trays are the ideal choice for bars, breweries, and even home enthusiasts who appreciate the culture of taste-testing. They provide an organized, sophisticated way to offer a selection of craft beers, wines, or spirits to guests and patrons.</p>
-                    
-                    <h3>Care Instructions</h3>
-                    <p>Keep your flight trays looking pristine with minimal care. Simply wipe clean with a damp cloth and store in a dry place to ensure their longevity and continued elegance.</p>
-                    <img src="tasters2.png" alt="Elegant Wooden Flight Trays">
+.brand-name a {
+    text-decoration: none;
+    color: #ffc83c;
+    font-size: 260%;
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
 
-                    <h3>Customer Testimonials</h3>
-                    <blockquote>"We've been using wildthingswood's flight trays at our brewery for months, and they've been a fantastic addition to our tasting room. The quality is unmatched, and our customers love the presentation." - Leftcoast Brewing</blockquote>
-                    <img src="tasters3.png" alt="Flight Trays in Use at Brewery">
-                </div>
-            </div>
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffc83c;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #f5ff42; /* Updated text color */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+/*    text-decoration: underline;*/
+}
+
+a {
+    font-size: 1.5rem;
+    color: #f5ff42;
+    text-decoration: none; /* Remove underline by default 
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Change text color on hover */
+}
 
 
-        </div>
-    </section>
-</main>
 
-<footer>
-    <div class="footer-content">
-        <h1>Contact Us</h1>
-        <h4>Toby Ryan</h4>
-        <h4>Mission Viejo, CA.</h4>
-        <h4>(949)933-0973</h4>
-        <h4>49erdude@cox.net</h4>
+/* Hero section styles remain the same as your previous version */
 
-        <div class="social-media">
-            <!-- Social media icons -->
-        </div>
-        <div class="newsletter">
-            <form>
-                <!-- Newsletter form -->
-            </form>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Your Brand Name. All Rights Reserved.</p>
-    </div>
-</footer>
+.hero {
+    background-image: url('/dji.jpg');/*    background-size: cover;*/
+    background-position: center;
+    background-size: cover;
+    height: 80vh; /* You can adjust this to suit your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const galleryLinks = document.querySelectorAll('.gallery-link');
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: -1;
+}
 
-    galleryLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default link behavior
-            const details = this.nextElementSibling; // Assuming `.gallery-item-details` is the next sibling
-            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+.hero-content h1 {
+    font-size: 3rem; /* Larger font size */
+    color: #ffcc00; /* Bright, attention-grabbing color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    margin-bottom: 20px;
+}
 
-            // Optional: Adjust the height of the parent `.gallery-item` based on the new height of the content
-            // This can be complex and might need calculations based on the specific content and layout
-        });
-    });
-});
+.hero-content p {
+    font-size: 1.4rem; /* Slightly larger paragraph font */
+    color: #ffffff; /* Keeping it white for simplicity */
+    max-width: 600px; /* Max width for better readability */
+    margin: 0 auto 30px; /* Auto margins for centering */
+    line-height: 1.4; /* Improved line height for readability */
+}
 
-</script>
-</body>
-</html>
+.btn-explore {
+    background-color: #00b31b9e; /* Updated background color */
+    color: #fbff00; /* Updated text color */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Making the button text bold */
+    text-transform: uppercase; /* Uppercase text for the button */
+}
+
+.btn-explore:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* ----------end hero----------------------------------------------------------------------------------------------------------- */
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox-trigger img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.lightbox-trigger img:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/*------------end lightbox------------------------------------------------------- */
+
+.featured-crafts {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.featured-crafts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.crafts-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Spacing between grid items */
+    padding: 0 30px; /* Padding around the grid */
+    justify-content: center;
+}
+
+.craft-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #6b6b6b; /* Updated background color */
+    padding: 25px;
+    border-radius: 10%;
+}
+
+.craft-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow for depth */
+}
+
+.craft-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.craft-item h3 {
+    font-size: 1.5rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.craft-item p {
+    font-size: 1rem;
+    color: #dadadada; /* Updated text color */
+}
+
+.craft-image {
+    width: 100%; /* Set the width to fit the container */
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Hide parts of the image that overflow */
+}
+
+.craft-image img {
+    width: 100%; /* Ensure the image fills the width */
+    height: 100%; /* Ensure the image fills the height */
+    object-fit: cover; /* Resize the image to maintain aspect ratio while filling the element */
+    border-radius: 30px;
+}
+
+/*-------------end crafts--------------------------------------------------------------------------------------------- */
+
+.blog-preview {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.blog-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: #6b6b6b; /* Updated background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.blog-post.expanded {
+    max-height: none; /* Remove max-height when expanded */
+}
+
+.blog-post:nth-child(odd) img {
+    order: 1; /* Image on the right for odd posts */
+}
+
+.blog-post:nth-child(even) img {
+    order: -1; /* Image on the left for even posts */
+}
+
+.blog-post img {
+    width: 16%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.blog-content h3 {
+    font-size: 1.8rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.blog-content p {
+    font-size: 1.2rem; /* Slightly larger paragraph font */
+    color: #ffc83c; /* Updated text color */
+}
+
+.read-more {
+    text-decoration: none;
+    color: #f5ff42; /* Updated text color */
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/*---------------end blog--------------------------------------------------------------------------------------------------------- */
+
+.affiliate-products {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #815858; /* Updated background color */
+}
+
+.affiliate-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.affiliate-product-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+    transform: scale(1.03); /* Slight increase in size */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.product-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #6b6b6b; /* Updated background color */
+    padding: 15px;
+    text-align: left;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #f5ff42; /* Updated text color */
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #ffc83c; /* Updated text color */
+}
+
+.buy-button {
+    text-decoration: none;
+    color: #fbff00; /* Updated text color */
+    background-color: #00b31b9e; /* Updated background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*-------------------firstcraftpage---------------*/
+
+/*-------------------------------------------------------------------------------*/
+
+.craft-detail {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.craft-detail-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+    border-radius: 30px;
+}
+
+.craft-detail h1, h2 {
+    color: #ffc83c; /* Color consistent with main page */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow as per main page */
+}
+
+.craft-detail ul {
+    list-style-type: disc; /* Bullets for features list */
+    margin-left: 20px; /* Indent for the list */
+    color: #dadadada;
+}
+
+.craft-detail p {
+    color: #dadadada; /* Darker text for readability */
+    line-height: 1.6; /* Line spacing for better readability */
+}
+
+.craft-detail a {
+    color: #007bff;
+    text-decoration: none; /* Style for links */
+}
+.craft-detail a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+footer {
+    /* Match footer styles to main page */
+    background-color: #815858; /* Same as main page footer */
+    color: #ffcc00; /* Footer text color */
+    /* ... other footer styles ... */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*-------------------contactpage---------------*/
+
+/*-------------------------------------------------------------------------------*/
+
+.contact-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffc83c; /* Theme color for labels */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #815858; /* Theme color border */
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.btn-submit {
+    background-color: #00b31b9e; 
+    color: #fbff00;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+/* ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------
+  ----------------------------------- ----------------------------------- ----------------------------------- -----------------------------------
+  - -----------------digital course section ----------------------------------- ----------------------------------- ----------------------------------- -----------------------------------
+   ----------------------------------- ----------------------------------- ----------------------------------- -----------------------------------
+    ----------------------------------- ----------------------------------- -----------------------------------*/
+
+.digital-course-section {
+    background-color: #6b6b6b; /* Light background for contrast */
+    padding: 40px 0; /* Top and bottom padding */
+    color: #eee; /* Dark text for readability */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.digital-course-section .container {
+    max-width: 1200px; /* Restrict container width for content alignment */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on sides */
+    
+}
+
+.course-overview {
+    display: flex; /* Flexbox layout for side-by-side content */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between image and course info */
+}
+
+.course-image {
+    max-width: 50%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Soften edges with a slight radius */
+}
+
+.course-info {
+    flex: 1; /* Take up remaining space */
+}
+
+.course-info h3 {
+    color: #ffcc00; /* Darker color for the title for emphasis */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.course-info p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.btn-primary {
+    background-color: #00b31b9e; /* Primary button color */
+    color: white; /* Text color for readability */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------- ----------------------------------
+  ------------------------Gallery section ----------- ----------------------------------- ----------------------------------- -----------------------------------
+  - ---------------------------------------------- ----*/
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content within each item */
+    padding: 20px;
+}
+
+.gallery-item p, ul, blockquote {
+    color: #dadada;
+
+}
+
+
+.gallery-item-details {
+    padding: 20px; /* Example padding */
+    display: none; /* Initially hidden */
+    /* Other styling properties */
+}
+
+
+  .gallery-section h3, .gallery-item-details h3 {
+    color: #ffc83c;
+}
+
+.gallery-section img {
+    border-radius: 10px;
+}
+
+.gallery-grid {
+/*    display: grid;*/
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centers items within the grid */
+    padding: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+    .hero-content p {
+        font-size: 1rem; /* Smaller font size for text */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Each item takes full width on smaller screens */
+    }
+    .gallery-item h3, .gallery-item-details h3, .gallery-item p, .gallery-item-details p {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+}
+
+
