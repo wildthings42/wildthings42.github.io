@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild Things Wood</title>
-    <meta name="description" content="Explore the art of craftsmanship with our custom wood creations, from drink carriers to personalized gifts. Discover quality and innovation with every piece.">
+    <title>Wild Things</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #815858;">
@@ -91,7 +90,7 @@
             <div class="blog-content">
                 <h3>DIY Title 1</h3>
                 <p>Short description of the blog post.</p>
-                <a href="craft1.html" class="read-more">Read More</a>
+                <a href="blog-post-1.html" class="read-more">Read More</a>
             </div>
         </article>
         <article class="blog-post">
@@ -110,13 +109,15 @@
     
 <section id="digital-course" class="digital-course-section">
     <div class="container">
-        <h2>Exclusive Woodworking Course</h2>
+        <!-- Clickable trigger for smaller screens -->
+        <h2 class="course-toggle">Exclusive Woodworking Course</h2>
         <div class="course-overview">
             <img src="image-059.jpg" alt="Large Outdoor Jenga Set Course" class="course-image">
+            <!-- Content to show/hide -->
             <div class="course-info">
                 <h3>Build Your Own Large Outdoor Jenga Set</h3>
                 <p>This comprehensive course takes you through the journey of building your very own large outdoor Jenga set. From selecting the perfect wood to precise cutting techniques, and assembling your game, learn every step in detailed video modules. Perfect for enthusiasts of all levels seeking to enhance their woodworking skills.</p>
-                <a href="digital-product-page.html" class="btn btn-primary" style="color: #f5ff42;">Discover the Course</a>
+                <a href="digital-product-page.html" class="btn btn-primary">Discover the Course</a>
             </div>
         </div>
     </div>
@@ -167,6 +168,16 @@
         <p>&copy; 2024 Your Brand Name. All Rights Reserved.</p>
     </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const courseToggle = document.querySelector('.course-toggle');
+
+    courseToggle.addEventListener('click', function () {
+        const courseInfo = this.nextElementSibling.querySelector('.course-info');
+        courseInfo.style.display = courseInfo.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
 
 </body>
 </html>
