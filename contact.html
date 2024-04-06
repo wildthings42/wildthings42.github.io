@@ -30,19 +30,18 @@
             <h1>Contact Us</h1>
             <p>If you have any questions or inquiries about our products, please fill out the form below and we will get back to you as soon as possible.</p>
 
-            <form action="path/to/form/processing" method="POST" class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <button type="submit" class="btn-submit">Send Message</button>
+            <form class="contact-form" action="https://formspree.io/f/mbjnplwv" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" name="_replyto" id="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" required></textarea>
+              
+              <button class="btn-submit" type="submit">Send Message</button>
             </form>
-
         </section>
     </main>
 
